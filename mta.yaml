@@ -1,0 +1,22 @@
+ID: NewEmployee
+_schema-version: '2.1'
+version: 0.0.1
+
+modules:
+ - name: NewEmployeeModule
+   type: hdb
+   path: NewEmployeeModule
+   requires:
+    - name: hdi_NewEmployeeModule
+
+resources:
+ - name: hdi_NewEmployeeModule
+   properties:
+      hdi-container-name: ${service-name}
+   type: com.sap.xs.hdi-container
+   parameters:
+    service-name: NewEmployee-hdi
+    config:
+    schema: NewEMPLOYEE
+    makeUniqueName: false
+

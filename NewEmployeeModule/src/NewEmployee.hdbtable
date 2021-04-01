@@ -1,0 +1,8 @@
+column table "NewEmployee.NewEmployeeModule::NEWEMPLOYEE" (
+    "ID" INTEGER  unique not null COMMENT 'Employee ID',
+    "EMPLOYEE_NAME" NVARCHAR(512) null COMMENT 'Name',
+    "AGE" INTEGER not null COMMENT 'Age',
+    "GENDER" NVARCHAR(512) COMMENT 'Gender',
+    "HIRING_DATE" NVARCHAR(512) COMMENT 'Hiring Date',
+    PRIMARY KEY ("ID")
+)

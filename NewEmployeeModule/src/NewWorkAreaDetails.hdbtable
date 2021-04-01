@@ -1,0 +1,7 @@
+column table "NewEmployee.NewEmployeeModule::WORK_AREA" (
+    "ID" INTEGER  not null COMMENT 'Employee ID',
+    "WORKING_HOURS" INTEGER not null COMMENT 'Hours',
+    "SERVICE_LINE" NVARCHAR(512) not null COMMENT 'Dept',
+    "CITY" NVARCHAR(512) COMMENT 'city',
+    PRIMARY KEY ("ID")
+)
